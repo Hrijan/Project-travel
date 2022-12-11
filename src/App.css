@@ -129,9 +129,10 @@ header{
 /* Footer */
 
 footer{
-  height: 60vh;
   background-color: #007CBE;
   color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 footer a{
@@ -143,8 +144,7 @@ footer a{
   display: flex;
   justify-content: space-around;
   padding-top: 7%;
-  height: 70%;
-  padding-bottom: 250px;
+  padding-bottom: 70px;
 }
 
 .footer-box h1{
@@ -168,11 +168,10 @@ footer a{
 }
 
 .copyrights{
+  padding: 25px 0;
   background-color: rgba(0, 0, 0, 0.546);
-  padding-top: 2%;
   display: flex;
   justify-content: space-around;
-  height: 21%;
 }
 
 .sociallinks{
@@ -181,9 +180,11 @@ footer a{
 
 .copyright{
   font-size: 20px;
+  margin-top: 10px;
 }
 
 .social-box{
+  margin-top: 10px;
   font-size: 20px;
   padding-right: 20px;
   width: 50px;
