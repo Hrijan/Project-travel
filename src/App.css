@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800&family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+
+/* Top */
+.top{
+  height: 7vh;
+  background-color: #007CBE;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 20px;
+}
+
+.topleft{
+  display: flex;
+  background-color: #FBAF00;
+  width: 10%;
+  clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 0 48%, 0% 0%);
+  padding: 0.7%;
+  font-weight: 600;
+}
+
+.topleft span{
+  font-size: 16px;
+}
+
+.time{
+  font-size: 24px;
+}
+
+
+.topright{
+  display: flex;
+  padding: 0.8% 5%;
+}
+
+.fa{
+  padding-right: 10px;
+}
+
+/* Header */
+
+header{
+  height: 20vh;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2% 1%;
+  background-color: #F1FAEE;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+}
+.headleft{
+  height: 100%;
+}
+.logo{
+  height: 100%;
+}
+
+.logo img{
+  height: 120%;
+}
+
+.headright{
+  height: 100%;
+  display: flex;
+  color: #000;
+}
+
+.call{
+  margin-right: 60px;
+  line-height: 0.7;
+}
+.call img{
+  height: 50%;
+}
+
+.email{
+  margin-right: 50px;
+  line-height: 0.7;
+}
+.email img{
+  height: 50%;
+}
+
+.design{
+  height: 100%;
+}
+
+.design button{
+  height: 60px;
+  width: 300px;
+  margin-top: 7%;
+  margin-left: 10%;
+}
