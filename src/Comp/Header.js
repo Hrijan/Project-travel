@@ -13,7 +13,7 @@ export default function Header() {
             <img src="https://www.attractivetravelnepal.com/wp-content/themes/ultrabyte/images/telephone.png" alt="" />
             <div>
                 <h3>Call Us</h3>
-                <p>+9779808717598</p>
+                <p>+9779800000000</p>
             </div>
         </div>
 

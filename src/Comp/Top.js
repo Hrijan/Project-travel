@@ -14,7 +14,7 @@ export default function Top() {
             <i class="fa fa-solid fa-phone"></i>
         </div>
         <div className="phone">
-            +9779808717598
+            +9779800000000
         </div>
       </div>
     </div>
