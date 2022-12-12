@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800&family=Roboto+Condensed:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Noto+Sans:wght@100;200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -114,6 +114,11 @@ header{
   font-size: 14px;
 }
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
 .dropdown-menu li a:hover{
   background-color: #007CBE;
 }
@@ -180,11 +185,11 @@ footer a{
 
 .copyright{
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .social-box{
-  margin-top: 10px;
+  margin-top: 15px;
   font-size: 20px;
   padding-right: 20px;
   width: 50px;
@@ -199,4 +204,67 @@ footer a{
     text-align: center;
     border-radius: 50%;
     background-color: #007CBE;
+}
+
+
+/* HOME PAGE STARTS HERE */
+.carousel img{
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  position: relative;
+}
+
+.carouseltext{
+  position:absolute;
+  top:25px;
+  left:50px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  color:#fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  z-index: 3;
+  }
+
+.carouseltext-large{
+  position:absolute;
+  top:70px;
+  left:50px;
+  font-family: 'East Sea Dokdo', sans-serif;
+  font-size: 90px;
+  font-weight: 500;
+  color:#fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  z-index: 3;
+}
+.overlay{
+  position: fixed; 
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 2; 
+  cursor: pointer;
+}
+.description{
+  height: 70vh;
+  background-color: #F1FAEE;
+  border-radius: 10px;
+  margin: 10px 150px 80px;
+  padding: 40px 80px;
+}
+
+.description h1{
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.description p{
+  font-size: 15px;
+  padding-bottom: 30px;
 }

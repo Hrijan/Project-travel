@@ -1,47 +1,51 @@
 import React from 'react'
 import PageAbout from '../AboutPages'
 import TrekPages from '../TrekPages'
-
+import {Routes, Route, Link } from 'react-router-dom'
+import Home from '../Pages/Home'
+import About from '../Pages/About'
+import Details from '../Pages/Details'
 
 export default function Navbar() {
   return (
+    <>
     <nav className="navbar navbar-expand-lg" id='navbarprime' style={{backgroundColor: "#007CBE"}}>
   <div className="container-fluid">
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#" style={{color: "#fff"}}>HOME</a>
+          <Link to={"/"} className="nav-link active" aria-current="page" style={{color: "#fff"}}>HOME</Link>
         </li>
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style={{color: "#fff"}}>
+          <Link to={'/about'} className="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false" style={{color: "#fff"}}>
             ABOUT US
-          </a>
+          </Link>
           <ul className="dropdown-menu" style={{backgroundColor: "#007CBE"}}>
             {PageAbout.map((a) => (
-                <li><a className="dropdown-item"  href="#" style={{color: "#fff"}}>{a.name}</a></li>
+                <li><Link to={'/about'} className="dropdown-item" href="#" style={{color: "#fff"}}>{a.name}</Link></li>
             ))}
           </ul>
         </li>
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#" style={{color: "#fff"}}>INFO</a>
+          <Link to={'/info'} className="nav-link active" aria-current="page" href="#" style={{color: "#fff"}}>INFO</Link>
         </li>
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style={{color: "#fff"}}>
+          <Link to = {"/trek"} className="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false" style={{color: "#fff"}}>
             TREKKING
-          </a>
+          </Link>
           <ul className="dropdown-menu" style={{backgroundColor: "#007CBE"}}>
             {TrekPages.map((a) => (
-                <li><a className="dropdown-item" href="#" style={{color: "#fff"}}>{a.name}</a></li>
+                <li><Link to={`/details/${a.id}`} className="dropdown-item" href="#" style={{color: "#fff"}}>{a.name}</Link></li>
             ))}
           </ul>
         </li>
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style={{color: "#fff"}}>
+          <Link to = {"/peak"} className="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false" style={{color: "#fff"}}>
             PEAK CLIMBING
-          </a>
+          </Link>
           <ul className="dropdown-menu" style={{backgroundColor: "#007CBE"}}>
-            <li><a className="dropdown-item dropright" href="#" style={{color: "#fff"}}>PEAK CLIMBING</a></li>
-            <li><a className="dropdown-item" href="#" style={{color: "#fff"}}>EXPEDITION</a></li>
+            <li><Link to = {"/peak"} className="dropdown-item dropright" href="#" style={{color: "#fff"}}>PEAK CLIMBING</Link></li>
+            <li><Link to = {"/expedition"} className="dropdown-item" href="#" style={{color: "#fff"}}>EXPEDITION</Link></li>
           </ul>
         </li>
       </ul>
@@ -53,5 +57,11 @@ export default function Navbar() {
   </div>
 </nav>
 
+<Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/details/:id" element={<Details />} />        
+    </Routes>
+    </>
   )
 }

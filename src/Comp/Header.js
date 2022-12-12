@@ -1,11 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 export default function Header() {
   return (
     <header>
       <div className='headleft'>
         <div className="logo">
-            <img src={require("../images/logo.png")} alt="" />
+            <Link to={'/'}><img src={require("../images/logo.png")} alt="" /></Link>
         </div>
       </div>
       <div className='headright'>
@@ -30,5 +32,6 @@ export default function Header() {
         </div>
       </div>
     </header>
+
   )
 }

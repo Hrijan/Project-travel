@@ -1,24 +1,24 @@
 const TrekPages = [
     {
-        id: 1, name: "Mardi Himal Trek", page: "/details/mardi"
+        id: 1, name: "Mardi Himal Trek", desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quis eligendi placeat error quisquam rem!"
     },
     {
-        id: 2, name: "Annapurna Trekking", page: "/details/annapurna"
+        id: 2, name: "Annapurna Trekking", desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quis eligendi placeat error quisquam rem!"
     },
     {
-        id: 3, name: "Everest Trekking", page: "/details/everest"
+        id: 3, name: "Everest Trekking", desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quis eligendi placeat error quisquam rem!"
     },
     {
-        id: 4, name: "Manaslu Trekking", page: "/details/manaslu"
+        id: 4, name: "Manaslu Trekking", desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quis eligendi placeat error quisquam rem!"
     },
     {
-        id: 5, name: "Mustang Trekking", page: "/details/mustang"
+        id: 5, name: "Mustang Trekking", desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quis eligendi placeat error quisquam rem!"
     },
     {
-        id: 6, name: "Langtang Trekking", page: "/details/langtang"
+        id: 6, name: "Langtang Trekking", desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quis eligendi placeat error quisquam rem!"
     },
     {
-        id: 7, name: "PoonHill Trekking", page: "/details/poonhill"
+        id: 7, name: "PoonHill Trekking", desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quis eligendi placeat error quisquam rem!"
     },
 ]
 
