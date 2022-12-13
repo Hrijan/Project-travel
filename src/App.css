@@ -130,7 +130,12 @@ header{
 .nav-item{
   padding-right: 7%;
 }
-
+.fixednav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
 /* Footer */
 
 footer{
@@ -250,6 +255,16 @@ footer a{
   z-index: 2; 
   cursor: pointer;
 }
+
+.btn-info{
+  position:absolute;
+  top: 250px;
+  left:50px;
+  padding: 20px 50px;
+  z-index: 4;
+  background-color: #FBAF00;
+  border: none;
+}
 .description{
   height: 70vh;
   background-color: #F1FAEE;
@@ -268,3 +283,56 @@ footer a{
   font-size: 15px;
   padding-bottom: 30px;
 }
+
+.homeviews{
+  display: flex;
+  width: 100%;
+  background-color: #F1FAEE;
+}
+
+.imgview{
+  width: 38%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+.imgview:first-child{
+  padding-left: 0;
+}
+
+.imgview img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.imgview span{
+  position: absolute;
+  top: 85%;
+  left: 37%;
+  z-index: 3;
+  color: #fff;
+  font-size: 42px;
+  font-family: 'East Sea Dokdo', sans-serif;
+}
+
+.dark{
+  position: absolute;
+  z-index: 3;
+  background: linear-gradient( 0deg, rgba(0, 0, 0, 0.96) 0%, rgba(255, 255, 255, 0) 100% );
+  top: 90%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.imgview img:hover{
+  transform: scale(1.5);
+
+}
+
+.imgview:hover{
+  padding: 0;
+}
+

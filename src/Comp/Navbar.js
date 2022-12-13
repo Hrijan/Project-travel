@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import PageAbout from '../AboutPages'
 import TrekPages from '../TrekPages'
 import {Routes, Route, Link } from 'react-router-dom'
@@ -7,9 +7,25 @@ import About from '../Pages/About'
 import Details from '../Pages/Details'
 
 export default function Navbar() {
+  const [fixedClass, setFixedClass] = useState('');
+
+  useEffect(() => {
+    window.addEventListener('scroll', stickNavbar);
+
+    return () => {
+      window.removeEventListener('scroll', stickNavbar);
+    };
+  }, []);
+
+  const stickNavbar = () => {
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      windowHeight > 350 ? setFixedClass('fixednav') : setFixedClass('');
+    }
+  };
   return (
     <>
-    <nav className="navbar navbar-expand-lg" id='navbarprime' style={{backgroundColor: "#007CBE"}}>
+    <nav className={`navbar navbar-expand-lg ${fixedClass}`} id='navbarprime' style={{backgroundColor: "#007CBE"}}>
   <div className="container-fluid">
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -51,7 +67,7 @@ export default function Navbar() {
       </ul>
       <form className="d-flex" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button className="btn btn-outline-success" type="submit">Search</button>
+        <button className="btn btn-success" type="submit">Search</button>
       </form>
     </div>
   </div>

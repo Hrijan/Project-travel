@@ -7,7 +7,7 @@ export default function Header() {
     <header>
       <div className='headleft'>
         <div className="logo">
-            <Link to={'/'}><img src={require("../images/logo.png")} alt="" /></Link>
+            <Link to={'/'}><img src={require("../img/logo.png")} alt="" /></Link>
         </div>
       </div>
       <div className='headright'>
