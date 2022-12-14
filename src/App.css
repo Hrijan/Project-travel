@@ -118,7 +118,9 @@ header{
   display: block;
   margin-top: 0;
 }
-
+.dropdown-item:focus{
+  background-color: #007CBE;
+}
 .dropdown-menu li a:hover{
   background-color: #007CBE;
 }

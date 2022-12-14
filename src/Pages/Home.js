@@ -3,40 +3,22 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { Link } from 'react-router-dom';
+import TrekCarousel from '../TrekCarousel.js';
 
 export default function Home() {
   return (
     <div>
       <div className="carousel">
         <OwlCarousel className='owl-theme' loop items={1}>
-          <div className="carousel-img">
-            <div className="overlay"></div>
-            <img src={require("../images/everest.jpg")} alt="" />
-            <span className="carouseltext">BEST OFFERS</span>
-            <span className="carouseltext-large">EVEREST TREKKING</span>
-            <Link to={'/details/3'}><button type="button" class="btn btn-info">BOOK NOW</button></Link>
-          </div>
-          <div className="carousel-img">
-            <div className="overlay"></div>
-            <img src={require("../images/manaslu.jpg")} alt="" />
-            <span className="carouseltext">BEST OFFERS</span>
-            <span className="carouseltext-large">MANASLU TREKKING</span>
-            <Link to={'/details/4'}><button type="button" class="btn btn-info">BOOK NOW</button></Link>
-          </div>
-          <div className="carousel-img">
-            <div className="overlay"></div>
-            <img src={require("../images/mardi.jpeg")} alt="" />
-            <span className="carouseltext">BEST OFFERS</span>
-            <span className="carouseltext-large">MARDI HIMAL TREKKING</span>
-            <Link to={'/details/1'}><button type="button" class="btn btn-info">BOOK NOW</button></Link>
-          </div>
-          <div className="carousel-img">
-            <div className="overlay"></div>
-            <img src={require("../images/poonhill.jpeg")} alt="" />
-            <span className="carouseltext">BEST OFFERS</span>
-            <span className="carouseltext-large">POONHILL TREKKING</span>
-            <Link to={'/details/7'}><button type="button" class="btn btn-info">BOOK NOW</button></Link>
-          </div>
+          {TrekCarousel.map((a) => (
+            <div className="carousel-img">
+              <div className="overlay"></div>
+              <img src={a.image} alt="" />
+              <span className="carouseltext">BEST OFFERS</span>
+              <span className="carouseltext-large">{a.name}</span>
+              <Link to={`/details/${a.id}`}><button type="button" class="btn btn-info">BOOK NOW</button></Link>
+            </div>
+          ))}
         </OwlCarousel>
       </div>
 
