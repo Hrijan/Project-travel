@@ -30,34 +30,15 @@ export default function Home() {
       </div>
 
       <div className="homeviews">
-        <div className="imgview">
-          <Link to={'/details/3'}>
-            <div className="dark"></div>
-            <img src={require("../images/everest.jpg")} alt="" />
-            <span>Everest</span>
-          </Link>
-        </div>
-        <div className="imgview">
-          <Link to={'/details/7'}>
-            <div className="dark"></div>
-            <img src={require("../images/poonhill.jpeg")} alt="" />
-            <span>Poonhill</span>
-          </Link>
-        </div>
-        <div className="imgview">
-          <Link to={'/details/4'}>
-            <div className="dark"></div>
-            <img src={require("../images/manaslu.jpg")} alt="" />
-            <span>Manaslu</span>
-          </Link>
-        </div>
-        <div className="imgview">
-          <Link to={'/details/1'}>
-            <div className="dark"></div>
-            <img src={require("../images/mardi.jpeg")} alt="" />
-            <span>Mardi</span>
-          </Link>
-        </div>
+        {TrekCarousel.map((b) => (
+          <div className="imgview">
+            <Link to={`/details/${b.id}`}>
+              <div className="dark"></div>
+              <img src={b.image} alt="" />
+              <span>{b.mountName}</span>
+            </Link>
+          </div>
+        ))}
       </div>
     </div>
   )
