@@ -367,31 +367,38 @@ footer a{
 .popular-des{
   width: 30%;
   padding: 75px 25px;
-  margin-right: 25px;
-  margin-left: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
   margin-bottom: 25px;
   position: relative;
+  border-radius: 10px;
+  background-color: #F1FAEE;
 }
 
 .popular-img{
   height: 70%;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .popular-img img{
   height: 90%;
   width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
 .popdesc{
-  margin-top: 25px;
+  margin-top: 150px;
   text-align: center;
 }
 
 .popcost{
   margin: 0;
   background-color: #FBAF00;
-  padding: 20px 47px;
+  padding: 20px 30px;
+  border-radius: 10px 0 0 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -399,8 +406,9 @@ footer a{
 }
 
 .popbtn{
-  margin-top: 10px;
-  width: 100%;
+  position: absolute;
+  top: 80%;
+  width: 90%;
   padding: 10px 0;
 }
 
@@ -410,4 +418,5 @@ footer a{
   right: 0;
   background: #FBAF00;
   padding: 10px 10px;
+  border-radius: 10px 0 0 10px;
 }
