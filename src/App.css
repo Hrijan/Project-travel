@@ -338,3 +338,76 @@ footer a{
   padding: 0;
 }
 
+.col-md-4{
+  border: 1px solid black;
+}
+
+.popular{
+  margin-top: 100px;
+}
+
+.popular h1 span{
+  color: #B80C09;
+}
+
+.popular-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 75px;
+}
+.pop-div{
+  height: 3px;
+  width: 450px;
+  justify-content: center;
+  background-color: #B80C09;
+}
+
+.popular-des{
+  width: 30%;
+  padding: 75px 25px;
+  margin-right: 25px;
+  margin-left: 15px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.popular-img{
+  height: 70%;
+  width: 100%;
+}
+
+.popular-img img{
+  height: 90%;
+  width: 100%;
+}
+
+.popdesc{
+  margin-top: 25px;
+  text-align: center;
+}
+
+.popcost{
+  margin: 0;
+  background-color: #FBAF00;
+  padding: 20px 47px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 0 48%, 0% 0%);
+}
+
+.popbtn{
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.poptime{
+  position: absolute;
+  top: 62%;
+  right: 0;
+  background: #FBAF00;
+  padding: 10px 10px;
+}

@@ -4,6 +4,8 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { Link } from 'react-router-dom';
 import TrekCarousel from '../TrekCarousel.js';
+import Popular from '../PopularDes.js';
+
 
 export default function Home() {
   return (
@@ -39,6 +41,36 @@ export default function Home() {
             </Link>
           </div>
         ))}
+      </div>
+
+      <div className="popular">
+        <div className="popular-title">
+          <h1><span>Popular</span> Destinations</h1>
+          <div className="pop-div"></div>
+        </div>
+        <div class="container">
+          <div class="row">
+            {Popular.map((c) => (
+              <div class="col-md-4 popular-des">
+              <div className="popular-img">
+                <img src={c.image} alt="" />
+              </div>
+              <div className="popdesc">
+                {c.name}
+              </div>
+              <span className='popcost'>
+                {c.cost}
+              </span>
+              <span className='poptime'>
+                {c.duration}
+              </span>
+              <span className='popbook'>
+                <Link to={`/details/${c.id}`}><button type="button" class="btn btn-outline-success popbtn">BOOK NOW</button></Link>
+              </span>
+            </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   )
