@@ -427,8 +427,6 @@ footer a{
   text-align: center;
 }
 
-.reviews > .container{
-}
 .person-rev{
   display: flex;
   flex-direction: column;
@@ -438,3 +436,5 @@ footer a{
   width: 40%;
   margin: 5%; 
 }
+
+/* CHECKING GITHUB PAGES */
