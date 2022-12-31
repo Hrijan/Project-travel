@@ -15,13 +15,13 @@ const Popular = [
         id: 5, name: "Manaslu Trekking", image: "./images/popular/manaslu.jpg", cost: "US $ 1299", duration: "18 Days"
     },
     {
-        id: 6, name: "Island Peak Climg", image: "./images/popular/islandpeak.jpg", cost: "US $ 2250", duration: "20 Days"
+        id: 6, name: "Island Peak Climb", image: "./images/popular/islandpeak.jpg", cost: "US $ 2250", duration: "20 Days"
     },
     {
         id: 7, name: "Poonhill Trekking", image: "./images/popular/poonhill.jpeg", cost: "US $ 325", duration: "5 Days"
     },
     {
-        id: 8, name: "Annapurna Poonhill Trekking", image: "./images/popular/mardi_base.jpg", cost: "US $ 830", duration: "10 Days"
+        id: 8, name: "Annapurna Poonhill Trekking", image: "./images/popular/annapurna_poonhill.jpg", cost: "US $ 830", duration: "10 Days"
     },
     {
         id: 9, name: "Everest Base Camp Hiking", image: "./images/popular/everest_base_hiking.jpg", cost: "US $ 1299", duration: "15 Days"

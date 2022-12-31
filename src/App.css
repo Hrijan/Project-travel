@@ -373,10 +373,11 @@ footer a{
   position: relative;
   border-radius: 10px;
   background-color: #F1FAEE;
+  height: 60vh;
 }
 
 .popular-img{
-  height: 70%;
+  height: 80%;
   width: 100%;
   position: absolute;
   top: 0;
@@ -387,10 +388,11 @@ footer a{
   height: 90%;
   width: 100%;
   border-radius: 10px 10px 0 0;
+  object-fit: cover;
 }
 
 .popdesc{
-  margin-top: 150px;
+  margin-top: 240px;
   text-align: center;
 }
 
@@ -407,7 +409,7 @@ footer a{
 
 .popbtn{
   position: absolute;
-  top: 80%;
+  top: 85%;
   width: 90%;
   padding: 10px 0;
 }
@@ -419,4 +421,20 @@ footer a{
   background: #FBAF00;
   padding: 10px 10px;
   border-radius: 10px 0 0 10px;
+}
+
+.reviews > h1{
+  text-align: center;
+}
+
+.reviews > .container{
+}
+.person-rev{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 15px;
+  width: 40%;
+  margin: 5%; 
 }

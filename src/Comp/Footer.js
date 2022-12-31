@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -7,17 +8,17 @@ export default function Footer() {
             <div className="footer-box">
                 <h1>QUICK LINKS</h1>
                 <ul>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Blog</a></li>
+                    <li><Link to={"/about"}>About Us</Link></li>
+                    <li><Link to={"/contact"}>Contact Us</Link></li>
+                    <li><Link to={"blog"}>Blog</Link></li>
                 </ul>
             </div>
             <div className="footer-box">
             <h1>TREKS</h1>
                 <ul>
-                    <li><a href="">Everest</a></li>
-                    <li><a href="">Annapurna</a></li>
-                    <li><a href="">Mardi Himal Trek</a></li>
+                    <li><Link to={"/details/3"}>Everest</Link></li>
+                    <li><Link to={"/details/2"}>Annapurna</Link></li>
+                    <li><Link to={"/details/1"}>Mardi Himal Trek</Link></li>
                 </ul>
             </div>
             <div className="footer-box contact-footer">
@@ -31,7 +32,7 @@ export default function Footer() {
         </div>
         <div className="copyrights">
             <div className="copyright">
-                Copyright © 2022- <a href="">Nepal Everest Himalaya Hiking Pvt. Ltd.</a>|  All Rights Reserved.
+                Copyright © 2022- <Link to={"/"}>Nepal Everest Himalaya Hiking Pvt. Ltd.</Link>|  All Rights Reserved.
             </div>
 
             <div className="sociallinks">
