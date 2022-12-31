@@ -331,7 +331,6 @@ footer a{
 
 .imgview img:hover{
   transform: scale(1.5);
-
 }
 
 .imgview:hover{
@@ -389,6 +388,13 @@ footer a{
   width: 100%;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.popular-img img:hover{
+  transform: scale(1.1);
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .popdesc{
