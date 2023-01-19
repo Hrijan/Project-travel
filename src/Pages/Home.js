@@ -91,7 +91,7 @@ export default function Home() {
         <div className="container">
           <div className="row">
             {post.map((a) => (
-              <div className="person-rev col-md-4" data-aos="fade-down">
+              <div className="person-rev col-md-4" data-aos="fade-right">
                 <h1>{a.name}</h1>
                 <p>{a.body}</p>
                 <span>{a.email}</span>
