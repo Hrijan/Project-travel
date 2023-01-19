@@ -400,6 +400,7 @@ footer a{
 .popdesc{
   margin-top: 265px;
   text-align: center;
+  overflow: hidden;
 }
 
 .popcost{
@@ -429,7 +430,12 @@ footer a{
   border-radius: 10px 0 0 10px;
 }
 
+.reviews{
+  margin-top: 150px;
+}
+
 .reviews > h1{
+  font-size: 75px;
   text-align: center;
 }
 
@@ -438,9 +444,22 @@ footer a{
   flex-direction: column;
   justify-content: center;
   border: 1px solid black;
-  padding: 15px;
+  padding: 35px;
   width: 40%;
   margin: 5%; 
+  border-radius: 20px;
+  background-color: #007CBE;
+  color: #F1FAEE;
 }
+
+.person-rev h1{
+  font-family: 'East Sea Dokdo', sans-serif;
+  font-size: 45px;
+}
+
+.person-rev p{
+  font-family: 'Noto Sans', sans-serif;
+}
+
 
 /* CHECKING GITHUB PAGES */
