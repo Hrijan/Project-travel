@@ -5,6 +5,7 @@ import {Routes, Route, Link } from 'react-router-dom'
 import Home from '../Pages/Home'
 import About from '../Pages/About'
 import Details from '../Pages/Details'
+import Reviews from '../Pages/Reviews'
 
 export default function Navbar() {
   const [fixedClass, setFixedClass] = useState('');
@@ -64,6 +65,9 @@ export default function Navbar() {
             <li><Link to = {"/expedition"} className="dropdown-item" href="#" style={{color: "#fff"}}>EXPEDITION</Link></li>
           </ul>
         </li>
+        <li className="nav-item">
+          <Link to={'/reviews'} className="nav-link active" aria-current="page" href="#" style={{color: "#fff"}}>REVIEWS</Link>
+        </li>
       </ul>
       <form className="d-flex" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
@@ -76,7 +80,8 @@ export default function Navbar() {
 <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/details/:id" element={<Details />} />        
+        <Route path="/details/:id" element={<Details />} />   
+        <Route path="/reviews" element={<Reviews />} />     
     </Routes>
     </>
   )

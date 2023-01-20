@@ -432,13 +432,14 @@ footer a{
   border-radius: 10px 0 0 10px;
 }
 
-.reviews{
-  margin-top: 150px;
-}
 
 .reviews > h1{
   font-size: 75px;
   text-align: center;
+  width: 100%;
+  background-color: #007CBE;
+  padding: 5%;
+  color: #fff;
 }
 
 .person-rev{

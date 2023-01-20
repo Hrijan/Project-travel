@@ -1,26 +1,13 @@
-import React, { useState, useEffect} from 'react'
+import React from 'react'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { Link } from 'react-router-dom';
 import TrekCarousel from '../TrekCarousel.js';
 import Popular from '../PopularDes.js';
-import axios from 'axios';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 export default function Home() {
-  useEffect(() => {
-    AOS.init();
-  }, [])
-  const [post, setPost] = useState([])
-  useEffect(() => {
-    axios.get('https://jsonplaceholder.typicode.com/posts/1/comments')
-    .then(res => {
-    console.log(res.data);
-    setPost(res.data)
-  });
-  })
   return (
     <div>
       <div className="carousel">
@@ -86,20 +73,6 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="reviews">
-        <h1>Reviews</h1>
-        <div className="container">
-          <div className="row">
-            {post.map((a) => (
-              <div data-aos="fade-right" className="person-rev col-md-4">
-                <h1>{a.name}</h1>
-                <p>{a.body}</p>
-                <span>{a.email}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
     </div>
   )
 }
