@@ -105,6 +105,7 @@ header{
 /* Navbar */
 .navbar{
   height: 8vh;
+  font-size: 15px;
 }
 .navbar a:hover{
   font-size: 17px;
@@ -130,6 +131,7 @@ header{
 }
 
 .nav-item{
+  margin-left: 2%;
   padding-right: 7%;
 }
 .fixednav{
@@ -461,5 +463,52 @@ footer a{
   font-family: 'Noto Sans', sans-serif;
 }
 
+/* HOME PAGE END HERE */
+
+/* ABOUT PAGE STARTS HERE */
+.about{
+  position: relative;
+}
+.background{
+  /* width: 100%; */
+  position: relative;
+}
+
+.background img{
+  width: 100%;
+}
+
+.background > .overlay{
+  position: absolute;
+}
+
+.about > .text{
+  position: absolute;
+  background-color: #E1F2FE;
+  width: 70%;
+  z-index: 3;
+  height: 70%;
+  top: 15%;
+  left: 15%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: left;
+  padding: 20px 30px;
+}
+
+.about .text h1{
+  font-size: 70px;
+  font-family: 'East Sea Dokdo', sans-serif;
+  border-bottom: 3px solid;
+  margin-bottom: 35px;
+}
+
+.about .text p{
+  font-size: 17px;
+  font-family: 'Noto Sans', sans-serif;
+}
 
 /* CHECKING GITHUB PAGES */
