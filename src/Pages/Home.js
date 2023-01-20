@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import TrekCarousel from '../TrekCarousel.js';
 import Popular from '../PopularDes.js';
 
-
 export default function Home() {
   return (
     <div>
@@ -72,7 +71,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
     </div>
   )
 }

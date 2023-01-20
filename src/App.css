@@ -432,6 +432,9 @@ footer a{
   border-radius: 10px 0 0 10px;
 }
 
+.reviews{
+  margin-top: 1500px;
+}
 
 .reviews > h1{
   font-size: 75px;
