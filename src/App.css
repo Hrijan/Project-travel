@@ -431,7 +431,7 @@ footer a{
   padding: 10px 10px;
   border-radius: 10px 0 0 10px;
 }
-
+/* REVIEWS HERE */
 .reviews .text{
   position: relative;
   height: 80vh;
@@ -464,6 +464,8 @@ footer a{
   padding: 5%;
   color: #fff;
 }
+
+/* REVIEWS END */
 
 .person-rev{
   display: flex;
@@ -576,10 +578,10 @@ footer a{
 }
 
 .details p{
-  margin: 70px;
+  margin: 70px 150px;
   text-align: justify;
-  font-size: 20px;
-  line-height: 150%;  
+  font-size: 17px;
+  line-height: 200%;  
 }
 
 .book-now{
