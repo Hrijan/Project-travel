@@ -16,18 +16,22 @@ export default function Reviews() {
     })
   return (
     <div className="reviews">
-    <h1>Reviews</h1>
-    <div className="container">
-      <div className="row">
-        {post.map((a) => (
-          <div data-aos= "fade-right" className="person-rev col-md-4">
-            <h1>{a.name}</h1>
-            <p>{a.body}</p>
-            <span>{a.email}</span>
-          </div>
-        ))}
+      <div className="text">
+        <img src={require("../img/everest.jpg")} alt="" />
+        <div className="overlay"></div>
+        <h1>Reviews</h1>
+      </div>
+      <div className="container">
+        <div className="row">
+          {post.map((a) => (
+            <div data-aos= "fade-right" className="person-rev col-md-4">
+              <h1>{a.name}</h1>
+              <p>{a.body}</p>
+              <span>{a.email}</span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
-</div>
   )
 }

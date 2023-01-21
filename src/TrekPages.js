@@ -26,4 +26,4 @@ const TrekPages = [
     },
 ]
 
-export default TrekPages
+export default TrekPages;
