@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Project-travel/static/css/main.9ecbd2de.css",
-    "main.js": "/Project-travel/static/js/main.663ce13d.js",
+    "main.css": "/Project-travel/static/css/main.4e0c476d.css",
+    "main.js": "/Project-travel/static/js/main.9a29341c.js",
     "static/js/787.8a220983.chunk.js": "/Project-travel/static/js/787.8a220983.chunk.js",
     "static/media/logo.png": "/Project-travel/static/media/logo.8387e4e9ce1463d48d7b.png",
     "static/media/everest.jpg": "/Project-travel/static/media/everest.ccacfc1596dd38558552.jpg",
     "index.html": "/Project-travel/index.html",
-    "main.9ecbd2de.css.map": "/Project-travel/static/css/main.9ecbd2de.css.map",
-    "main.663ce13d.js.map": "/Project-travel/static/js/main.663ce13d.js.map",
+    "main.4e0c476d.css.map": "/Project-travel/static/css/main.4e0c476d.css.map",
+    "main.9a29341c.js.map": "/Project-travel/static/js/main.9a29341c.js.map",
     "787.8a220983.chunk.js.map": "/Project-travel/static/js/787.8a220983.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ecbd2de.css",
-    "static/js/main.663ce13d.js"
+    "static/css/main.4e0c476d.css",
+    "static/js/main.9a29341c.js"
   ]
 }
