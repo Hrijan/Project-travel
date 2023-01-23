@@ -6,13 +6,13 @@ import Home from '../Pages/Home'
 import About from '../Pages/About'
 import Details from '../Pages/Details'
 import Reviews from '../Pages/Reviews'
+import Trek from '../Pages/Trek'
 
 export default function Navbar() {
   const [fixedClass, setFixedClass] = useState('');
 
   useEffect(() => {
     window.addEventListener('scroll', stickNavbar);
-
     return () => {
       window.removeEventListener('scroll', stickNavbar);
     };
@@ -81,7 +81,8 @@ export default function Navbar() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/details/:id" element={<Details />} />   
-        <Route path="/reviews" element={<Reviews />} />     
+        <Route path="/reviews" element={<Reviews />} />   
+        <Route path="/trek" element={<Trek />} />    
     </Routes>
     </>
   )

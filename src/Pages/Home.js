@@ -52,7 +52,7 @@ export default function Home() {
             {Popular.map((c) => (
               <div class="col-md-4 popular-des">
               <div className="popular-img">
-                <img src={c.image} alt="" />
+                <Link to={`/details/${c.id}`}><img src={c.image} alt="" /></Link>
               </div>
               <div className="popdesc">
                 {c.name}

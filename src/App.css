@@ -566,7 +566,7 @@ footer a{
   text-align: center;
   position: absolute;
   top: 30%;
-  left: 33%;
+  left: 31%;
   z-index: 4;
   color: #fff;
   font-size: 95px;
@@ -595,6 +595,51 @@ footer a{
   margin-bottom: 50px;
 }
 /* DETAIL PAGE ENDS HERE */
+
+/* TREK PAGE HERE */
+
+.trek a{
+  list-style: none;
+  text-decoration: none;
+}
+
+.trek h1{
+  text-align: center;
+  padding: 65px;
+  font-size: 85px;
+  font-family: 'Noto Sans', sans-serif;
+  color: #007CBE;
+}
+
+.trek ul{
+  padding: 0;
+  margin: 0;
+}
+
+.trek li{
+  position: relative;
+}
+
+.trek li .overlay{
+  position: absolute;
+}
+
+.trek li img{
+  width: 100%;
+  height: 70vh;
+}
+
+.trek span{
+  position: absolute;
+  font-family: 'East Sea Dokdo', sans-serif;
+  z-index: 5;
+  color: #FBAF00;
+  font-size: 65px;
+  top: 37%;
+  left: 37%;
+}
+
+/* TREK PAGE ENDS HERE */
 
 
 /* CHECKING GITHUB PAGES */
