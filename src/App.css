@@ -627,6 +627,7 @@ footer a{
 .trek li img{
   width: 100%;
   height: 70vh;
+  object-fit: cover;
 }
 
 .trek span{
