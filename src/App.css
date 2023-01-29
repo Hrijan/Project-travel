@@ -641,6 +641,87 @@ footer a{
 }
 
 /* TREK PAGE ENDS HERE */
+/* PEAK EXPEDITION PAGE STARTS HERE */
 
+.Peak h1{
+  text-align: center;
+  margin: 50px 0;
+  color: #007CBE;
+  font-weight: 700;
+  font-size: 55px;
+}
 
+.peaks{
+  position: relative;
+  width: 50%;
+  height: 50vh;
+  margin: 0;
+  float: right;
+}
+.clear{
+  clear: both;
+}
+.peaks img{
+  width: 100%;
+  height: 100%;
+}
+.peakname{
+  position: absolute;
+  z-index: 4;
+  top: 75%;
+  left: 25%;
+  text-align: center;
+  font-size: 45px;
+  color: #fff;
+  font-family: 'East Sea Dokdo', sans-serif;
+}
+
+.peaks .dark{
+  top: 0%;
+  height: 100%;
+}
+
+.peakname{
+  transition: 2s;
+}
+
+.peaks button{
+  z-index: 5;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  padding: 15px 250px;
+  display: none;
+}
+
+.peakdescp{
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  z-index: 5;
+  text-align: center;
+  margin: 0 80px;
+  font-size: 25px;
+  color: #FBAF00;
+  display: none;
+  transition: display 2s ease-in-out;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.peaks:hover .peakname{
+  top: 5%;
+}
+
+.peaks:hover .dark{
+  background: linear-gradient( 0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100% );
+}
+
+.peaks:hover .peakdescp{
+  display: block;
+}
+
+.peaks:hover button{
+  display: block;
+}
+/* PEAK EXPEDITION PAGE STARTS HERE */
 /* CHECKING GITHUB PAGES */

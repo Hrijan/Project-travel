@@ -7,6 +7,7 @@ import About from '../Pages/About'
 import Details from '../Pages/Details'
 import Reviews from '../Pages/Reviews'
 import Trek from '../Pages/Trek'
+import PeakClimbing from '../Pages/PeakClimbing'
 
 export default function Navbar() {
   const [fixedClass, setFixedClass] = useState('');
@@ -82,7 +83,8 @@ export default function Navbar() {
         <Route path="/about" element={<About />} />
         <Route path="/details/:id" element={<Details />} />   
         <Route path="/reviews" element={<Reviews />} />   
-        <Route path="/trek" element={<Trek />} />    
+        <Route path="/trek" element={<Trek />} />
+        <Route path="/peak" element={<PeakClimbing />} />     
     </Routes>
     </>
   )
